@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Movies from './movies';
+import React from 'react';
+
 const MovieForm = ({ match, history }) => {
     return (
         <div>
