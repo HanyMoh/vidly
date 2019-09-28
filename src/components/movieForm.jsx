@@ -37,7 +37,7 @@ class MovieForm extends Form {
   };
 
   async populateGenres() {
-    const { data: genres } = getGenres();
+    const { data: genres } = await getGenres();
     this.setState({ genres });
   }
 
