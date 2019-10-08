@@ -5,6 +5,8 @@ import { apiUrl } from '../config.json';
 const apiEndPoint = apiUrl + "/v1/user";
 const tokenKey = "token";
 
+http.setJwt(getJwt());
+
 export async function login(email, password) {
   const { data: jwt } = await http.post(apiEndPoint + '/sessions.json', {
     user: {
